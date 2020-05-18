@@ -1,4 +1,9 @@
 {
+    // "python.pythonPath": "./graalvm-ce-java11-20.0.0/bin/graalpython",
+    "python.pythonPath": "./bin/python3",
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Path": "./bin/autopep8",
+    "python.formatting.autopep8Args": ["--ignore=E26,E302,E401,E402"],
 
     "multiCommand.commands": [
         {
@@ -24,16 +29,14 @@
     // ignore large files for VSCode sync
     "files.watcherExclude": {
         "**/bin/**": true, "**/include/**":true, "**/lib*/**":true, "**/share/**":true,
-        "**/*.pyc": true, "**/docs/**":true,
-    //     "**/buildroot-*/**": true,
-    //     "**/firmware/**": true,
+        "**/graalvm-ce-java*-*/**": true,
+        "**/gz/**": true,
     },
 
     "files.exclude": {
         "bin": true, "include":true, "lib*":true, "share":true, "pyvenv.cfg":true,
-        "**/*.pyc": true, "**/docs/**":true,
     },
 
     "editor.tabSize": 4,
-
+    "python.pythonPath": "/usr/bin/python3",
 }
